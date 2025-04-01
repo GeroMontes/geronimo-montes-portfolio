@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "Geronimo Montes",
+    "title": "Fullstack Developer",
+    "description": "Soy un desarrollador fullstack con experiencia en tecnologías como Angular, Django, Node.js, y más. Me apasiona aprender nuevas tecnologías y desarrollar soluciones eficientes.",
+    "contact": {
+      "email": "geronimo.montes@example.com",
+      "phone": "+123456789",
+      "location": "Culiacán, Sinaloa, México"
+    },
+    "social": {
+      "github": "https://github.com/geronimo-montes",
+      "linkedin": "https://www.linkedin.com/in/geronimo-montes/",
+      "twitter": "https://twitter.com/geronimo_montes"
+    }
+  },
+  "skills": [
+    "Angular",
+    "Django",
+    "Node.js",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Git"
+  ],
+  "experience": [
+    {
+      "title": "Fullstack Developer",
+      "company": "Centro de Productividad Ceres",
+      "duration": "2022 - Present",
+      "description": "Desarrollé y mantuve aplicaciones web utilizando tecnologías como Django, Angular, y Node.js. Trabajé en la optimización de procesos y en la implementación de soluciones escalables."
+    },
+    {
+      "title": "Software Developer Intern",
+      "company": "Tech Solutions Inc.",
+      "duration": "2021 - 2022",
+      "description": "Colaboré en proyectos de desarrollo de software con Python y JavaScript. Implementé mejoras en el rendimiento y ayudé en la creación de nuevas funcionalidades."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sistema de Gestión de Proveedores",
+      "description": "Sistema para la gestión de proveedores, incluyendo autenticación y validación de proveedores. Implementado con Laravel y Vue.js.",
+      "url": "https://github.com/geronimo-montes/gestion-proveedores"
+    },
+    {
+      "name": "Aplicación de E-Commerce",
+      "description": "Plataforma de e-commerce construida con Angular y Node.js. Implementación de pagos en línea, gestión de inventarios y control de órdenes.",
+      "url": "https://github.com/geronimo-montes/e-commerce-app"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ingeniería en Software",
+      "university": "Universidad Autónoma de Sinaloa",
+      "year": "2017 - 2022",
+      "description": "Obtuve una formación integral en desarrollo de software, aprendiendo tanto backend como frontend, así como principios de ingeniería de software y gestión de proyectos."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Carlos Pérez",
+      "role": "CEO, Tech Solutions Inc.",
+      "quote": "Geronimo es un desarrollador excepcional con un gran enfoque en la calidad y eficiencia. Su capacidad para resolver problemas es impresionante."
+    }
+  ]
+}   
