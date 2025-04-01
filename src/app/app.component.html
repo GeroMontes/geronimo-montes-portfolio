@@ -1,7 +1,7 @@
 <div class="main">
 
-    <!-- <app-loading-bar *ngIf="!showPages" (loadingComplete)="showPages=$event"></app-loading-bar> -->
+    <app-loading-bar *ngIf="!showPages" (loadingComplete)="showPages=$event"></app-loading-bar>
 
 
-    <router-outlet *ngIf="!showPages"></router-outlet>
+    <router-outlet *ngIf="showPages"></router-outlet>
 </div>
