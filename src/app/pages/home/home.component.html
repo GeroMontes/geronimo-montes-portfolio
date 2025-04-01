@@ -1,34 +1,110 @@
-<!-- portfolio.component.html -->
-<div *ngIf="!isLoading">
-  <h1>{{ data.info.name }}</h1>
-  <p>{{ data.info.title }}</p>
-  <p>{{ data.info.description }}</p>
+<div class="bg-green-900 bg-opacity-40  text-white font-mono">
 
-  <h2>Skills</h2>
-  <ul>
-    <li *ngFor="let skill of data.skills">{{ skill }}</li>
-  </ul>
+  <!-- Header -->
+  <header class="flex flex-col items-center justify-center py-8">
+    <h1 class="text-5xl font-bold text-green-400">Geronimo Montes</h1>
+    <p class="text-xl text-green-300">Programador Fullstack | Desarrollador de Software</p>
+  </header>
 
-  <h2>Experience</h2>
-  <ul>
-    <li *ngFor="let exp of data.experience">
-      <h3>{{ exp.title }} - {{ exp.company }}</h3>
-      <p>{{ exp.description }}</p>
-    </li>
-  </ul>
+  <!-- Sección de Resumen -->
+  <section class="py-6 px-4 bg-green-800 bg-opacity-80 m-10 rounded-md">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-green-400">Resumen</h2>
+      <p class="mt-4 text-lg text-green-300">
+        Soy un programador apasionado con una sólida formación en ingeniería de software. Me especializo en el
+        desarrollo fullstack y
+        tengo experiencia trabajando con tecnologías como Django, Angular, Node.js, Python, JavaScript y
+        TypeScript.
+        Estoy comprometido con el aprendizaje constante y la mejora continua.
+      </p>
+    </div>
+  </section>
 
-  <h2>Projects</h2>
-  <ul>
-    <li *ngFor="let project of data.projects">
-      <a [href]="project.url" target="_blank">{{ project.name }}</a>: {{ project.description }}
-    </li>
-  </ul>
+  <!-- Sección de Habilidades -->
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-green-400">Habilidades</h2>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-green-700 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl text-green-300">Desarrollo Web</h3>
+          <ul class="list-disc list-inside text-left indent-32 text-green-200">
+            <li>HTML</li>
+            <li>CS</li>
+            <li>JavaScript</li>
+            <li>Angular
+            <li>React</li>
+            <li>Node.js
+            <li>Express</li>
+          </ul>
+        </div>
+        <div class="bg-green-700 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl text-green-300">Backend</h3>
+          <ul class="list-disc list-inside text-left indent-32 text-green-200">
+            <li>Django</li>
+            <li>Flask</li>
+            <li>API REST</li>
+            <li>Base de datos: PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="bg-green-700 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl text-green-300">Otros</h3>
+          <ul class="list-disc list-inside text-left indent-32 text-green-200">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>Pruebas Unitarias</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Testimonials</h2>
-  <ul>
-    <li *ngFor="let testimonial of data.testimonials">
-      <blockquote>"{{ testimonial.quote }}"</blockquote>
-      <footer>- {{ testimonial.name }}, {{ testimonial.role }}</footer>
-    </li>
-  </ul>
+  <!-- Sección de Experiencia -->
+  <section class="py-16 px-4 bg-green-800">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-green-400">Experiencia</h2>
+      <div class="mt-8">
+        <div class="bg-green-700 p-6 rounded-lg shadow-md mb-8">
+          <h3 class="text-2xl text-green-300">Desarrollador Fullstack - Centro de Productividad Ceres</h3>
+          <p class="text-green-200">2022 - Actualidad</p>
+          <p class="mt-4 text-green-200">Desarrollé aplicaciones fullstack utilizando tecnologías como Django,
+            Node.js, y Angular. Implementé soluciones eficientes para la automatización de procesos internos
+            y colaboré estrechamente con equipos multidisciplinarios.</p>
+        </div>
+        <div class="bg-green-700 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl text-green-300">Desarrollador Junior - Empresa XYZ</h3>
+          <p class="text-green-200">2021 - 2022</p>
+          <p class="mt-4 text-green-200">Participé en el desarrollo de aplicaciones web utilizando JavaScript
+            y frameworks como React. Trabajé en la optimización del rendimiento y la implementación de
+            funcionalidades clave para los productos de la empresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Educación -->
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-green-400">Educación</h2>
+      <div class="mt-8">
+        <div class="bg-green-700 p-6 rounded-lg shadow-md mb-8">
+          <h3 class="text-2xl text-green-300">Licenciatura en Ingeniería de Software</h3>
+          <p class="text-green-200">Universidad Autónoma de Sinaloa</p>
+          <p class="text-green-200">2017 - 2022</p>
+        </div>
+        <div class="bg-green-700 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl text-green-300">Certificación en Desarrollo Fullstack</h3>
+          <p class="text-green-200">Udemy</p>
+          <p class="text-green-200">2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-green-800 text-center">
+    <p class="text-green-300">© 2025 Geronimo Montes - Todos los derechos reservados</p>
+  </footer>
+
 </div>
