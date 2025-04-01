@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href 'https://GeroMontes.github.io/geronimo-montes-portfolio/'",
+    "build": "ng build --configuration production --base-href \"https://GeroMontes.github.io/geronimo-montes-portfolio/\" ",
     "build:release": "ng build --configuration production --base-href \"https://GeroMontes.github.io/geronimo-montes-portfolio/\" && npm version minor",
     "publish": "npx angular-cli-ghpages --dir=dist/geronimo-montes-portfolio/browser",
     "watch": "ng build --watch --configuration development",
