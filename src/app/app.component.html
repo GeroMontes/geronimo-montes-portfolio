@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<app-loading-bar *ngIf="!showPages" (loadingComplete)="showPages=$event"></app-loading-bar>
+
+
+<router-outlet *ngIf="showPages"></router-outlet>

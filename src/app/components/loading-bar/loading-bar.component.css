@@ -1,0 +1,19 @@
+@keyframes progressBarAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.animate-progress-bar {
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(0, 255, 0, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 75%
+  );
+  animation: progressBarAnimation 1.5s linear infinite;
+}
