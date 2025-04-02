@@ -1,0 +1,35 @@
+<div *ngIf="!isMinimized" #windowRef class="resume-container animate__animated animate__fadeIn">
+    <!-- Simulación de ventana -->
+    <div class="window-header" (mousedown)="onMouseDown($event)">
+        <div class="buttons">
+            <div class="close"></div>
+            <div class="minimize" (click)="minimizeWindow()"></div>
+            <div class="maximize"></div>
+        </div>
+        <p>Portfolio - Geronimo Montes</p>
+    </div>
+
+    <!-- Contenido de las pestañas -->
+    <div class="content">
+
+        <div *ngIf="activeTab === 'experiencia'" class="tab animate__animated animate__fadeInUp">
+            <h2 class="text-green-400 text-2xl font-bold">Experiencia</h2>
+            <p class="mt-2 text-green-300 font-bold">Desarrollador Fullstack - Centro de Productividad Ceres</p>
+            <p class="text-green-300">Desarrollo aplicaciones utilizando Django, Angular y Node.js.</p>
+        </div>
+
+        <div *ngIf="activeTab === 'educacion'" class="tab animate__animated animate__fadeInUp">
+            <h2 class="text-green-400 text-2xl font-bold">Educación</h2>
+            <p class="mt-2 text-green-300 font-bold">Ingeniería de Software - Universidad Autónoma de Sinaloa</p>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <div class="tab-navigation">
+        <button (click)="changeTab('experiencia')" [class.active]="activeTab === 'experiencia'">Experiencia</button>
+        <button (click)="changeTab('educacion')" [class.active]="activeTab === 'educacion'">Educación</button>
+    </div>
+</div>
+
+<!-- Botón para restaurar si la ventana está minimizada -->
+<button *ngIf="isMinimized" class="restore-btn" (click)="restoreWindow()">Mi experiencia</button>

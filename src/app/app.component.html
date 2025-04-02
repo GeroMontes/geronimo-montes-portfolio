@@ -1,7 +1,5 @@
-<div class="main">
-    <app-matrix-background></app-matrix-background>
-    <app-loading-bar *ngIf="!showPages" (loadingComplete)="showPages=$event"></app-loading-bar>
-    
-    
-    <router-outlet *ngIf="showPages"></router-outlet>
-</div>
+<router-outlet *ngIf="showPages"></router-outlet>
+
+<app-matrix-background></app-matrix-background>
+
+<app-loading-bar *ngIf="!showPages" (loadingComplete)="showPages=$event"></app-loading-bar>
