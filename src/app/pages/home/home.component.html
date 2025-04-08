@@ -7,15 +7,19 @@
   <!-- Contenedor que ocupa el espacio restante -->
   <div class="flex-1 w-full overflow-auto">
     <app-window-custom [windowTitle]="'Experiencia'" [contentText]="'Descripción de mi experiencia como desarrollador.'"
-      [contentList]="data.info.experience">
+      [contentList]="data.info.experience" [index]="1" [isMaximized]="maximizedIndex === 1"
+      (maximizeWindow)="maximizedIndex=$event">
     </app-window-custom>
 
     <app-window-custom [windowTitle]="'Proyectos'"
-      [contentText]="'Descripción de los proyectos en los que he trabajado.'" [contentList]="data.info.projects">
+      [contentText]="'Descripción de los proyectos en los que he trabajado.'" [contentList]="data.info.projects"
+      [index]="2" [isMaximized]="maximizedIndex === 2" (maximizeWindow)="maximizedIndex=$event">
     </app-window-custom>
 
     <app-window-custom [windowTitle]="'Educación'" [contentText]="'Mi formación académica.'"
-      [contentList]="data.info.education">
+      [contentList]="data.info.education" [index]="3" [isMaximized]="maximizedIndex === 3"
+      (maximizeWindow)="maximizedIndex=$event">
+
     </app-window-custom>
   </div>
 

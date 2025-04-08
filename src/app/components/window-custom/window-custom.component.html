@@ -14,6 +14,7 @@
     </div>
 
     <div class="p-10 space-y-6">
+        <p class="text-green-300">{{ contentText}}</p>
         <div *ngFor="let item of contentList">
             <h2 class="text-green-400 text-xl font-bold">{{ item.title || item.name }}</h2>
             <p *ngIf="item.company" class="mt-2 text-green-300 font-bold">{{ item.company }} - {{ item.duration }}</p>
