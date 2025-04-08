@@ -1,136 +1,26 @@
-<div class="bg-green-900 bg-opacity-40 text-white font-mono">
+<div *ngIf="data?.info" class="bg-green-900 bg-opacity-40 text-white font-mono h-screen flex flex-col">
   <!-- Header -->
-  <header class="flex items-center justify-between py-8 px-4 space-x-4">
-    <div class="flex px-4 space-x-4">
-      <img src="logo-version-1/android-chrome-512x512.png" alt="Logo"
-        class="w-16 h-16 animate__animated animate__fadeIn">
-      <div class="animate__animated animate__fadeIn">
-        <h1 class="text-5xl font-bold text-green-400">Geronimo Montes</h1>
-        <p class="text-xl text-green-300">Programador Fullstack | Desarrollador de Software</p>
-      </div>
-    </div>
-    <!-- Social Buttons -->
-    <div class="flex justify-start px-4 space-x-4 pb-4">
-      <a href="#" class="text-green-300 hover:text-green-500">
-        <i class="fa-brands fa-github text-2xl animate__animated animate__fadeIn"></i>
-      </a>
-      <a href="#" class="text-green-300 hover:text-green-500">
-        <i class="fa-brands fa-whatsapp text-2xl animate__animated animate__fadeIn"></i>
-      </a>
-      <a href="#" class="text-green-300 hover:text-green-500">
-        <i class="fa-solid fa-envelope text-2xl animate__animated animate__fadeIn"></i>
-      </a>
-      <a href="#" class="text-green-300 hover:text-green-500">
-        <i class="fa-brands fa-linkedin text-2xl animate__animated animate__fadeIn"></i>
-      </a>
-    </div>
-  </header>
+  <app-header [title]="data.info.title" [subtitle]="data.info.subtitle" [logoUrl]="data.info.logoUrl"
+    [socials]="data.info.socials">
+  </app-header>
 
-  <!-- Sección de Resumen y Habilidades -->
-  <section class="py-6 px-4 m-10 rounded-md border-4 border-green-500 relative">
-    <!-- Simulación de ventana de PC -->
-    <div
-      class="absolute top-0 left-0 w-full bg-green-700 flex justify-between items-center p-2 rounded-t-md animate__animated animate__fadeIn">
-      <div class="flex space-x-2 ml-2">
-        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-      </div>
-      <p class="text-sm text-white font-bold">Portfolio - Geronimo Montes</p>
-      <div class="w-5"></div> <!-- Espaciador -->
-    </div>
+  <!-- Contenedor que ocupa el espacio restante -->
+  <div class="flex-1 w-full overflow-auto">
+    <app-window-custom [windowTitle]="'Experiencia'" [contentText]="'Descripción de mi experiencia como desarrollador.'"
+      [contentList]="data.info.experience">
+    </app-window-custom>
 
-    <div class="flex flex-col md:flex-row mt-8 animate__animated animate__fadeIn">
-      <!-- Resumen -->
-      <div class="md:w-3/5 p-6">
-        <h2 class="text-3xl font-semibold text-green-400">Resumen</h2>
-        <p class="mt-4 text-lg text-green-300">
-          Soy un programador apasionado con una sólida formación en ingeniería de software. Me especializo en el
-          desarrollo fullstack y tengo experiencia trabajando con tecnologías como Django, Angular, Node.js, Python,
-          JavaScript y TypeScript. Estoy comprometido con el aprendizaje constante y la mejora continua.
-        </p>
-      </div>
+    <app-window-custom [windowTitle]="'Proyectos'"
+      [contentText]="'Descripción de los proyectos en los que he trabajado.'" [contentList]="data.info.projects">
+    </app-window-custom>
 
-      <!-- Habilidades -->
-      <div class="md:w-2/5 p-6 bg-green-700 rounded-lg shadow-md">
-        <h2 class="text-2xl font-semibold text-green-300">Habilidades</h2>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn">HTML</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-1s">CSS</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-2s">JavaScript</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-3s">Angular</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-4s">React</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">Node.js</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">Express</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">Django</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">Flask</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">PostgreSQL</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">MySQL</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">Git</span>
-          <span
-            class="skill bg-green-600 text-green-200 px-3 py-1 rounded-full text-sm animate__animated animate__bounceIn animate__delay-5s">Docker</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <app-resume-tabs></app-resume-tabs>
-  <!-- Sección de Experiencia -->
-  <!-- <section class="py-16 px-4 bg-green-800">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold text-green-400">Experiencia</h2>
-      <div class="mt-8">
-        <div class="bg-green-700 p-6 rounded-lg shadow-md mb-8">
-          <h3 class="text-2xl text-green-300">Desarrollador Fullstack - Centro de Productividad Ceres</h3>
-          <p class="text-green-200">2022 - Actualidad</p>
-          <p class="mt-4 text-green-200">Desarrollé aplicaciones fullstack utilizando tecnologías como Django, Node.js,
-            y Angular. Implementé soluciones eficientes para la automatización de procesos internos y colaboré
-            estrechamente con equipos multidisciplinarios.</p>
-        </div>
-        <div class="bg-green-700 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl text-green-300">Desarrollador Junior - Empresa XYZ</h3>
-          <p class="text-green-200">2021 - 2022</p>
-          <p class="mt-4 text-green-200">Participé en el desarrollo de aplicaciones web utilizando JavaScript y
-            frameworks como React. Trabajé en la optimización del rendimiento y la implementación de funcionalidades
-            clave para los productos de la empresa.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Sección de Educación -->
-  <!-- <section class="py-16 px-4">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold text-green-400">Educación</h2>
-      <div class="mt-8">
-        <div class="bg-green-700 p-6 rounded-lg shadow-md mb-8">
-          <h3 class="text-2xl text-green-300">Licenciatura en Ingeniería de Software</h3>
-          <p class="text-green-200">Universidad Autónoma de Sinaloa</p>
-          <p class="text-green-200">2017 - 2022</p>
-        </div>
-        <div class="bg-green-700 p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl text-green-300">Certificación en Desarrollo Fullstack</h3>
-          <p class="text-green-200">Udemy</p>
-          <p class="text-green-200">2023</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
+    <app-window-custom [windowTitle]="'Educación'" [contentText]="'Mi formación académica.'"
+      [contentList]="data.info.education">
+    </app-window-custom>
+  </div>
 
   <!-- Footer -->
-  <!-- <footer class="py-8 bg-green-800 text-center">
+  <footer class="py-8 bg-green-800 text-center">
     <p class="text-green-300">© 2025 Geronimo Montes - Todos los derechos reservados</p>
-  </footer> -->
+  </footer>
 </div>

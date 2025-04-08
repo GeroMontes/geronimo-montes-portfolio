@@ -21,7 +21,7 @@ export class LoadingBarComponent {
   currentMessage = 'Cargando...';
   progress = 0;
   loadedFiles = 0;
-  totalFiles = 10;
+  totalFiles = 1;
 
   private ctx!: CanvasRenderingContext2D;
   private columns!: number;
