@@ -11,7 +11,10 @@
     <div class="flex justify-start px-4 space-x-4 pb-4">
         <a *ngFor="let social of socials" [href]="social.link" class="text-green-300 hover:text-green-500"
             target="_blank" rel="noopener">
-            <i [class]="social.icon + ' text-2xl animate__animated animate__fadeIn'"></i>
+            <img [src]="social.icon" class="-green-300 hover:text-green-500 w-6 h-6 animate__animated animate__fadeIn"
+                alt="social icon" />
+
         </a>
     </div>
+
 </header>
