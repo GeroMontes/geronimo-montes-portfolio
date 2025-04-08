@@ -12,19 +12,19 @@
     },
     "socials": [
       {
-        "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg",
+        "icon": "fa-brands fa-github",
         "link": "https://github.com/geronimomontes"
       },
       {
-        "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg",
+        "icon": "fa-brands fa-whatsapp",
         "link": "https://wa.me/5210000000000"
       },
       {
-        "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg",
+        "icon": "fa-solid fa-envelope",
         "link": "mailto:geronimo@example.com"
       },
       {
-        "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg",
+        "icon": "fa-brands fa-linkedin",
         "link": "https://linkedin.com/in/geronimomontes"
       }
     ]
