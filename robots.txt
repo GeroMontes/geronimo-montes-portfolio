@@ -1,3 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /admin/
+Allow: /assets/
 Sitemap: https://geromontes.github.io/geronimo-montes-portfolio/sitemap.xml
