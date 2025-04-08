@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../../components/header/header.component';
 import { WindowCustomComponent } from '../../components/window-custom/window-custom.component';
 import { ContactComponent } from '../contact/contact.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -16,9 +17,20 @@ export class HomeComponent implements OnInit {
   data: any = [];
   isLoading: boolean = true;
 
-  constructor(private dataService: DataService) {}
+  constructor(
+    private dataService: DataService,
+    private meta: Meta,
+    private title: Title
+  ) {}
 
   ngOnInit() {
+    this.title.setTitle('Inicio - Geronimo Montes Portfolio');
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Portafolio de Geronimo Montes, desarrollador fullstack con experiencia en Angular, Django y más.',
+    });
+
     this.dataService.getPageData().subscribe((response) => {
       this.data = response;
       this.isLoading = false;
