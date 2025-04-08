@@ -1,30 +1,48 @@
 {
   "info": {
     "name": "Geronimo Montes",
-    "title": "Fullstack Developer",
+    "title": "Geronimo Montes:",
+    "logoUrl": "base-logo.png",
+    "subtitle": "Programador Fullstack | Desarrollador de Software:",
     "description": "Soy un desarrollador fullstack con experiencia en tecnologías como Angular, Django, Node.js, y más. Me apasiona aprender nuevas tecnologías y desarrollar soluciones eficientes.",
     "contact": {
       "email": "geronimo.montes@example.com",
       "phone": "+123456789",
       "location": "Culiacán, Sinaloa, México"
     },
-    "social": {
-      "github": "https://github.com/geronimo-montes",
-      "linkedin": "https://www.linkedin.com/in/geronimo-montes/",
-      "twitter": "https://twitter.com/geronimo_montes"
-    }
+    "socials": [
+      {
+        "icon": "fa-brands fa-github",
+        "link": "https://github.com/geronimomontes"
+      },
+      {
+        "icon": "fa-brands fa-whatsapp",
+        "link": "https://wa.me/5210000000000"
+      },
+      {
+        "icon": "fa-solid fa-envelope",
+        "link": "mailto:geronimo@example.com"
+      },
+      {
+        "icon": "fa-brands fa-linkedin",
+        "link": "https://linkedin.com/in/geronimomontes"
+      }
+    ]
   },
   "skills": [
-    "Angular",
-    "Django",
-    "Node.js",
+    "HTML",
+    "CSS",
     "JavaScript",
-    "TypeScript",
-    "Python",
-    "HTML5",
-    "CSS3",
-    "Tailwind CSS",
-    "Git"
+    "Angular",
+    "React",
+    "Node.js",
+    "Express",
+    "Django",
+    "Flask",
+    "PostgreSQL",
+    "MySQL",
+    "Git",
+    "Docker"
   ],
   "experience": [
     {
@@ -67,4 +85,4 @@
       "quote": "Geronimo es un desarrollador excepcional con un gran enfoque en la calidad y eficiencia. Su capacidad para resolver problemas es impresionante."
     }
   ]
-}   
+}

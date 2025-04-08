@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://geromontes.github.io/geronimo-montes-portfolio/sitemap.xml
